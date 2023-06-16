@@ -10,6 +10,3 @@ class Workout(models.Model):
 
     class Meta:
         app_label = 'huyna'
-
-    def __str__(self):
-        return f'Workout #{self.id}: [Name: {self.name}; Description: {self.description}, Duration: {self.duration}min; Sensei: {self.sensei}]'

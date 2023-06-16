@@ -23,7 +23,7 @@ def get_workouts(request, workout_id=None):
             duration = request.POST['duration']
             sensei = request.POST['sensei']
 
-            workout = Workout(name=name, description=description, duration=duration, sensei=sensei
+            workout = Workout(name=name, description=description, duration=duration, sensei=sensei)
             workout.save()
             return HttpResponse(workout)
             # Create new workout
